@@ -1,0 +1,343 @@
+.footer {
+    padding-bottom: 4rem;
+    background: white;
+}
+
+.invite {
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+    width: 80%;
+    margin: auto;
+    display: flex;
+
+    align-items: center;
+
+    border-bottom: 1px solid #122852;
+}
+
+@media all and (max-width: 800px) {
+    .invite {
+        flex-direction: column;
+    }
+}
+
+.invite-text-section {
+}
+
+@media all and (max-width: 800px) {
+    .invite-text-section {
+        text-align: center;
+    }
+}
+
+.invite-input-section {
+    display: flex;
+    align-items: center;
+    flex: 1 0 auto;
+}
+
+@media all and (max-width: 800px) {
+    .invite-input-section {
+        margin-top: 2rem;
+        width: 100%;
+    }
+}
+
+.invite-header {
+    font-family: Lato, sans-serif;
+    font-size: 3.4rem;
+    font-weight: 900;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 0.76;
+    letter-spacing: normal;
+    color: #122852;
+}
+
+.invite-subtext {
+    margin-top: 10px;
+    font-family: PTSerif, sans-serif;
+    font-size: 1.5rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.4;
+    letter-spacing: normal;
+    color: #122852;
+}
+
+.invite-input {
+    margin-left: 2rem;
+    flex: 1 0 auto;
+}
+
+@media all and (max-width: 800px) {
+    .invite-input {
+        margin-left: 0;
+    }
+}
+
+.invite-input-input {
+    text-indent: 2rem;
+    border: 1px solid #dadada;
+    border-radius: 3px;
+    height: 42px;
+    width: 100%;
+}
+
+.invite-button {
+    margin-left: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 2rem;
+    height: 38px;
+    color: white;
+    background: #122852;
+    font-family: Lato, sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+    border-radius: 3px;
+}
+
+.nav-section {
+    width: 80%;
+    margin: 3rem auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-column-gap: 1rem;
+    grid-row-gap: 1rem;
+}
+
+.nav-header {
+    font-family: Lato, sans-serif;
+    font-size: 1.2rem;
+    font-weight: 900;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2.5;
+    letter-spacing: normal;
+    color: #122852;
+}
+
+.nav-item {
+    font-family: PTSerif, sans-serif;
+    font-size: 1.2rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2;
+    letter-spacing: normal;
+    color: #2e2f30;
+}
+
+.social-icons {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.social-icon {
+    width: 30px;
+    height: 30px;
+    margin: 3px 3px;
+}
+
+.social-icon.mail {
+    background: url("../img/mail.svg") center no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.social-icon.linkedin {
+    background: url("../img/linkedin.svg") center no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.social-icon.facebook {
+    background: url("../img/facebook.svg") center no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.social-icon.instagram {
+    background: url("../img/instagram.svg") center no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.social-icon.twitter {
+    background: url("../img/twitter.svg") center no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.social-icon.google {
+    background: url("../img/google.svg") center no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.footer-nav {
+    margin-top: 4rem;
+    display: flex;
+    margin: 0 10%;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-logo {
+    width: 70px;
+    height: 40px;
+    margin-right: 3rem;
+    background: url("../img/logo.svg") center no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.footer-nav-item {
+    font-family: PTSerif, sans-serif;
+    font-size: 1.2rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2;
+    letter-spacing: normal;
+    color: #2e2f30;
+    /*margin: 0 1.5rem;*/
+    opacity: 0.5;
+    margin-right: 1.5rem;
+}
+
+.footer-hr{
+    opacity: 0.5;
+    margin: auto;
+    width: 80%;
+    height: 1px;
+    border: solid 1px #122852;
+    margin-top: 10px
+}
+
+.footer-social-media
+{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer-social-media-normal{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.social-media-column-flex{
+    display: flex;
+    flex-direction: column;
+}
+
+.social-media-header{
+    font-family: Lato, sans-serif;
+    font-size: 3.4rem;
+    font-weight: 900;
+    color: #122852;
+}
+
+.social-media-text{
+    font-family: PTSerif, sans-serif;
+    font-size: 1.5rem;
+    color: #122852;
+}
+
+.linkedin-icon{
+    background: url("../img/linkedin-new.svg") center no-repeat;
+    width: 38px;
+    height: 38px;
+}
+
+.instagram-icon{
+    background: url("../img/instagram-new.svg") center no-repeat;
+    width: 38px;
+    height: 38px;
+}
+
+.twitter-icon{
+    background: url("../img/twitter-new.svg") center no-repeat;
+    width: 38px;
+    height: 38px;
+}
+
+.facebook-icon{
+    background: url("../img/facebook-new.svg") center no-repeat;
+    width: 38px;
+    height: 38px;
+}
+
+.social-media-icons{
+    display: flex;
+    flex-direction: row;
+}
+
+.social-media-icons-mobile{
+    display: flex;
+    flex-direction: row;
+    margin: 5px;
+    margin-left: 0;
+}
+
+.social-media-margin{
+    padding-right: 5px;
+}
+
+.footer-social-media-mobile{
+    display: none;
+}
+
+.devider{
+    margin-right: 1.5rem;
+    line-height: 2;
+}
+
+@media all and (max-width: 600px) {
+    .footer-social-media-normal{
+        display: none;
+    }
+
+    .footer-social-media-mobile{
+        display: block;
+    }
+
+    .social-media-icons-mobile{
+        padding-bottom: 5px;
+    }
+
+    .social-media-header{
+        padding-top: 5px;
+    }
+}
+
+.nav-section.logged-out {
+    display: flex;
+    grid-gap: 3rem;
+    color: #122852;
+    opacity: 0.85;
+    font-family: PTSerif, sans-serif;
+}
+
+.footer-flex{
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+}
+
+.footer-nav a {
+    color: #2e2f30;
+}

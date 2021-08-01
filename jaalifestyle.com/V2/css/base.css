@@ -1,0 +1,30 @@
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+	font-family: Lato, sans-serif;
+}
+
+body {
+	padding: 0px;
+	margin: 0px;
+}
+
+html {
+	font-family: Lato, sans-serif;
+	box-sizing: border-box;
+	font-size: 62.5%;
+
+
+}
+
+
+
+@media all and (max-width: 700px) {
+	html {
+		font-size: 50% !important;
+	}
+}
+
+
+

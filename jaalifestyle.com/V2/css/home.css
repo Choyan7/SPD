@@ -1,0 +1,384 @@
+.background-header {
+	height: 600px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+
+	position: relative;
+}
+
+.header-text {
+	font-size: 4.8rem;
+	font-weight: 900;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1.5;
+	letter-spacing: normal;
+	text-align: center;
+	color: #ffffff;
+}
+
+@media all and (max-width: 700px) {
+	.header-text {
+		width: 60%;
+	}
+}
+
+.sub-text {
+	margin-top: 8px;
+	font-family: Lato, sans-serif;
+	font-size: 1.4rem;
+	font-weight: bold;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1.71;
+	letter-spacing: normal;
+	text-align: center;
+	color: #ffffff;
+	width: 60%;
+}
+
+.bullet-points {
+
+	display: flex;
+	position: absolute;
+	bottom: 100px;
+	left: 50%;
+
+	transform: translateX(-50%);
+}
+
+.bullet {
+	margin: 5px;
+	border: 1px solid white;
+	width: 7px;
+	height: 7px;
+	border-radius: 5px;
+}
+
+.bullet.active {
+	background: white;
+}
+
+@media all and (max-width: 700px) {
+	.sub-text {
+		width: 50%;
+	}
+}
+
+.back {
+	position: absolute;
+	top: 50%;
+	left: 5%;
+	width: 32px;
+	height: 100px;
+	background: url("../img/back.svg") center no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.forward {
+	position: absolute;
+	top: 50%;
+	right: 5%;
+	width: 32px;
+	height: 100px;
+	background: url("../img/forward.svg") center no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.about-section {
+	height: 600px;
+	background: url("../img/car.jpg") center no-repeat;
+	background-position: center;
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.about-header {
+	font-family: Lato, sans-serif;
+	font-size: 4.8rem;
+	font-weight: 900;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1.25;
+	letter-spacing: normal;
+	text-align: center;
+	color: #ffffff;
+}
+
+@media all and (max-width: 700px) {
+	.about-header {
+		width: 70%;
+	}
+}
+
+.play-button {
+	margin-top: 20px;
+	background: url("../img/play.svg") center no-repeat;
+	background-size: cover;
+	background-position: center;
+	width: 70px;
+	height: 70px;
+}
+
+.news {
+	padding-top: 5rem;
+	min-height: 600px;
+	background: #f8f8f8;
+}
+
+@media all and (max-width: 930px) {
+	.news {
+		padding-bottom: 4rem;
+	}
+}
+
+.news-header {
+	margin-top: 8rem;
+	font-family: Lato, sans-serif;
+	font-size: 3.4rem;
+	font-weight: 900;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1.76;
+	letter-spacing: normal;
+	text-align: center;
+	color: #122852;
+}
+
+.news-subtext {
+	opacity: 0.5;
+	font-family: PTSerif, sans-serif;
+	font-size: 1.2rem;
+	font-weight: normal;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 2.5;
+	letter-spacing: normal;
+	text-align: center;
+	color: #0b1a37;
+}
+
+.news-images {
+	margin-top: 4rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+@media all and (max-width: 930px) {
+	.news-images {
+		flex-direction: column;
+	}
+}
+
+.news-image {
+	margin: 0 5px;
+	width: 300px;
+	height: 300px;
+	position: relative;
+
+}
+
+.news-image.image-1 {
+	background: url("../img/plane.png") center no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.news-image.image-2 {
+	background: url("../img/plane.png") center no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.news-image.image-3 {
+	background: url("../img/pool-2.png") center no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.item-date {
+	opacity: 0.5;
+	font-family: Lato, sans-serif;
+	font-size: 1.1rem;
+	font-weight: 900;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 2.73;
+	letter-spacing: normal;
+	color: #ffffff;
+
+	position: absolute;
+	bottom: 30px;
+	left: 20px;
+
+}
+
+.item-text {
+	font-family: Lato, sans-serif;
+	font-size: 1.2rem;
+	font-weight: 900;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 2.17;
+	letter-spacing: normal;
+	color: #ffffff;
+
+	position: absolute;
+	bottom: 10px;
+	left: 20px;
+}
+
+.background-header-logget-out {
+	height: 600px;
+	background: url("../img/social.png") center no-repeat;
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+
+	position: relative;
+}
+
+.lifestyle-section {
+	min-height: 400px;
+}
+
+.lifestyle-header {
+	font-family: Lato, sans-serif;
+	font-size: 3.4rem;
+	font-weight: 900;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1.29;
+	letter-spacing: normal;
+	color: #122852;
+}
+
+.lifestyle-sub-header {
+	margin-top: 3rem;
+	opacity: 0.5;
+	font-family: PTSerif, sans-serif;
+	font-size: 1.2rem;
+	font-weight: normal;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1.67;
+	letter-spacing: normal;
+	color: #122852;
+}
+
+.lifestyle-invite-button {
+	margin-top: 3rem;
+	width: 200px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0 2rem;
+	height: 38px;
+	color: white;
+	background: #122852;
+	font-family: Lato, sans-serif;
+	font-size: 1.2rem;
+	font-weight: bold;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: normal;
+	letter-spacing: normal;
+	text-align: center;
+	color: #ffffff;
+	border-radius: 3px;
+}
+
+.lifestyle-container {
+	/*height: 100%;*/
+	padding: 4rem 0;
+	margin-left: 10%;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.text-part {
+	width: 90%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+@media all and (max-width: 764px) {
+	.lifestyle-container {
+		width: 80%;
+		margin: auto;
+		padding-top: 4rem;
+	}
+
+	.lifestyle-image-part {
+		grid-row: 1/ span 1;
+	}
+
+	.text-part {
+		justify-content: flex-start;
+	}
+
+	.lifestyle-header {
+		margin-top: 4rem;
+	}
+}
+
+
+.lifestyle-image-part {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: url("../img/world.svg") center no-repeat;
+	background-size: contain;
+	background-position: center;
+}
+
+.lifestyle-logo {
+	width: 260px;
+	height: 150px;
+
+	background: url("../img/logo.svg") center no-repeat;
+	background-size: cover;
+	background-position: center;
+
+}
+
+.sign-up-button-clear {
+	padding: 0 4rem;
+	margin: 2rem auto;
+	height: 55px;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: Lato, sans-serif;
+	font-size: 1.6rem;
+	font-weight: bold;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: normal;
+	letter-spacing: normal;
+	text-align: center;
+	color: #ffffff;
+	background: transparent;
+	border: 2px solid white;
+	border-radius: 3px;
+	min-width: 200px;
+
+}
+

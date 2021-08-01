@@ -1,0 +1,288 @@
+.header {
+	height: 92px;
+	background: white;
+
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	position: relative;
+
+	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.19);
+
+
+}
+
+.header > .logo {
+	margin-left: 10%;
+	width: 120px;
+	height: 70px;
+	background: url("../img/logo.svg") center no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.header-item {
+	cursor: pointer;
+	font-size: 1.2rem;
+	font-weight: 900;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 2.5;
+	letter-spacing: normal;
+	color: #122852;
+
+	position: relative;
+	transition: all .3s;
+}
+
+.header-item:after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	width: 0%;
+	height: 2px;
+	background: #122852;
+	transition: all .3s;
+
+}
+
+.header-item.active:after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 2px;
+	background: #122852;
+
+}
+
+.header-item:last-child {
+	margin-right: 10%;
+}
+
+.header-button {
+	padding: 0 3rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 30px;
+	font-family: Lato;
+	font-size: 12px;
+	font-weight: bold;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: normal;
+	letter-spacing: normal;
+	text-align: center;
+	color: #ffffff;
+	background: #122852;
+	border-radius: 3px;
+}
+
+.header-mobile {
+	display: none;
+	height: 60px;
+	background: white;
+
+	align-items: center;
+	justify-content: space-between;
+	position: relative;
+
+	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.19);
+	align-items: center;
+}
+
+.header-mobile > .burger {
+	margin-left: 2rem;
+	background: url("../img/burger.svg") center no-repeat;
+	background-size: contain;
+	background-position: center;
+	width: 21px;
+	height: 15px;
+}
+
+.header-mobile > .logo {
+	background: url("../img/logo.svg") center no-repeat;
+	background-size: contain;
+	background-position: center;
+	height: 80%;
+	width: 70px;
+}
+
+.header-mobile > .search {
+	margin-right: 2rem;
+	width: 15px;
+	height: 16px;
+}
+
+@media all and (max-width: 800px) {
+	.header {
+		display: none;
+	}
+
+	.header-mobile {
+		display: flex;
+	}
+}
+
+.nav {
+	padding-bottom: 4rem;
+	display: flex;
+	background: white;
+	position: fixed;
+	width: 0px;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	visibility: hidden;
+	box-shadow: 0 10px 10px 10px rgba(0, 0, 0, 0.19);
+	transition: all .5s;
+	flex-direction: column;
+	align-items: center;
+	overflow-y: scroll;
+
+}
+
+.nav.open {
+	visibility: visible;
+	width: 100vw;
+}
+
+.nav > .logo {
+	flex: 1 0 auto;
+	margin-top: 4rem;
+	width: 83px;
+	height: 50px;
+	background: url("../img/logo.svg") center no-repeat;
+	background-size: contain;
+	background-position: center;
+}
+
+
+.nav > .nav-item {
+	margin-top: 1.5rem;
+	width: 90%;
+
+}
+
+.nav > .nav-item > .text {
+	font-family: Lato, sans-serif;
+	font-size: 1.6rem;
+	font-weight: 900;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1.88;
+	letter-spacing: normal;
+	text-align: center;
+	color: #122852;
+	width: 100%;
+	padding-bottom: 1rem;
+	border-bottom: 1px solid #122852;
+}
+
+.nav > .nav-item > .sub-title {
+	margin-top: 1.5rem;
+	font-family: Lato, sans-serif;
+	font-size: 1.6rem;
+	font-weight: 900;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1.88;
+	letter-spacing: normal;
+	text-align: center;
+	color: #122852;
+}
+
+.nav > .nav-item > .sub-nav {
+
+	margin-top: 2rem;
+	font-family: Lato, sans-serif;
+	font-size: 1.2rem;
+	font-weight: normal;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: normal;
+	letter-spacing: normal;
+	text-align: center;
+	color: #70706f;
+	display: block;
+}
+
+.nav > .nav-item > .sub-nav:last-child {
+	padding-bottom: 1rem;
+	border-bottom: 1px solid #122852;
+}
+
+.close-menu {
+	margin-top: 4rem;
+	flex: 1 0 auto;
+	width: 63px;
+	height: 63px;
+	background: url("../img/close-menu.svg") center no-repeat;
+	background-size: contain;
+	background-position: center;
+}
+
+.nav::-webkit-scrollbar {
+	display: none;
+}
+
+/* Hide scrollbar for IE and Edge */
+.nav {
+	-ms-overflow-style: none;
+}
+
+.nav-item {
+	position: relative;
+}
+
+.sub-menu {
+	position: absolute;
+	background: white;
+	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.09);
+	left: -50%;
+
+
+}
+
+
+.sub-menu {
+	cursor: pointer;
+	display: none;
+	transition: all .3s;
+	min-width: 200px;
+}
+
+.header-item:hover > .sub-menu {
+	display: block;
+}
+
+.header-item:hover:after {
+	transform: scale(1.05);
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 3px;
+	background: rgba(0, 0, 0, .2);
+	bottom: 0;
+	left: 0;
+}
+
+.sub-menu > .item {
+	height: 40px;
+	display: flex;
+	align-items: center;
+	padding: 1rem;
+
+}
+
+.sub-menu > .item:hover {
+	background: #eeeeee;
+}
+
+
+

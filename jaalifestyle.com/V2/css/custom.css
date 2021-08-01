@@ -1,0 +1,24 @@
+a {
+    text-decoration: none;
+}
+
+.header a {
+    color: #333;
+}
+
+.glide__arrow {
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.forward, .back {
+    width: 40px !important;
+}
+
+.lifestyle-section a:hover {
+    background-color: black;
+}
+
+.info-section .header, .categories .header {
+    box-shadow: none !important;
+}
